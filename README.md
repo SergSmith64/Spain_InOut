@@ -9,3 +9,13 @@
 	<li>SASS</li>
 	<li>Git</li>
 </ul>
+
+<br>
+<p><b>2019-Jan-03</b> Feedback form works:</p>
+<ul>
+	<li>New file MAIL_01.PHP created</li>
+	<li>In which added the address ( info@inoutlabs.es ), where the message about the site visitor will come.</li>
+	<li>In this case, the visitor of the site will also receive a letter.</li>
+	<li>In the INDEX.HTML, the date was changed to 2019</li>
+	<li></li>
+</ul>

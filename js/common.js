@@ -7,17 +7,24 @@ $(document).ready(function() {
 		$('body, html').animate({scrollTop: bl_top}, 2500);
 		return false;
 	});
+
+	$("#form_01").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "mail_01.php",
+			data: $(this).serialize()
+		}).done(function() {
+			alert("Thank you for contacting. In the near future, our managers will call you back.");
+			setTimeout(function() {
+				$("#form_01").trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
 	
 });
 
 
-$(window).load(function() {
+// $(window).load(function() {
 
-	$(".pic-move").animated("bounceInLeft");
-
-// 	$(".top-logo img").animated("zoomInDown", "zoomInUp");
-// 	$(".top-logo h3").animated("zoomInDown", "zoomInUp");
-// 	$(".foto_univer h2").animated("bounceIn")
-// 	$(".top-logo").animated("zoomInDown", "zoomInUp")
-
-});
+// });
